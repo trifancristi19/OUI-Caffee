@@ -22,6 +22,8 @@ CSS3 – Styling the webpage with a modern and responsive design
 
 JavaScript – Adding interactivity and dynamic features
 
+PHP – Handling backend operations and dynamic content
+
 📩 Contact
 
 If you have any questions or feedback, feel free to reach out:
