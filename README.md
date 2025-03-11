@@ -4,25 +4,25 @@ Welcome to OUI Caffee! This is my first project at NHL Stenden University, where
 
 🌟 Features
 
-Fully Responsive – The website is designed to work on all screen sizes, including PCs, tablets, and mobile phones.
+- Fully Responsive – The website is designed to work on all screen sizes, including PCs, tablets, and mobile phones.
 
-Modern UI Design – Aesthetic and clean design to create an inviting experience.
+- Modern UI Design – Aesthetic and clean design to create an inviting experience.
 
-Interactive Elements – Engaging JavaScript components for dynamic user interaction.
+- Interactive Elements – Engaging JavaScript components for dynamic user interaction.
 
-Smooth Navigation – User-friendly interface with easy access to all pages.
+- Smooth Navigation – User-friendly interface with easy access to all pages.
 
-Custom Styling – Unique color palette and typography tailored for a coffee shop atmosphere.
+- Custom Styling – Unique color palette and typography tailored for a coffee shop atmosphere.
 
 🛠️ Technologies Used
 
-HTML5 – Structuring the content
+- HTML5 – Structuring the content
 
-CSS3 – Styling the webpage with a modern and responsive design
+- CSS3 – Styling the webpage with a modern and responsive design
 
-JavaScript – Adding interactivity and dynamic features
+- JavaScript – Adding interactivity and dynamic features
 
-PHP – Handling backend operations and dynamic content
+- PHP – Handling backend operations and dynamic content
 
 📩 Contact
 
