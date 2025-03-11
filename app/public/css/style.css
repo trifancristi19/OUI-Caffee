@@ -1,0 +1,1042 @@
+/* Added fonts */
+@font-face {
+  font-family: CircularStd;
+  src: url(../fonts/CircularStd-Book.otf);
+}
+
+@font-face {
+  font-family: Caveat;
+  src: url(../fonts/Caveat-Regular.ttf);
+}
+
+/* Removes the basic margin and padding that is automatically assigned to every site*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Circular Std";
+  scroll-behavior: smooth;
+}
+
+/*header section*/
+
+@keyframes changeBackground {
+  0%,
+  100% {
+    background-image: url("../imgs/photos/coffee-background.jpeg");
+    /* Start and end with the same image */
+  }
+
+  33.33% {
+    background-image: url("../imgs/photos/tea-background.jpeg");
+    /* Change at 33.33% of the animation duration */
+  }
+
+  66.66% {
+    background-image: url("../imgs/photos/croissants-background.jpeg");
+    /* Change at 66.66% of the animation duration */
+  }
+}
+
+/*Header Styling*/
+.headerMain {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../imgs/photos/coffee-background.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: changeBackground 24s linear infinite;
+  z-index: 2;
+  /* 15s duration, 5s for each image */
+  position: relative;
+  overflow: hidden;
+}
+
+/*Styling of the logo*/
+.headerLogo {
+  width: 7rem;
+  height: 5rem;
+  filter: drop-shadow(0 0 10px rgb(255, 244, 174));
+}
+
+/*Styling navigation bar and the buttons of it*/
+.headerNavBar {
+  display: flex;
+  position: fixed;
+  width: 100vw;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5rem 1rem 3rem;
+}
+
+.headerBtn {
+  display: flex;
+  gap: 2.5rem;
+  justify-content: flex-end;
+}
+
+.hamburgerBtn {
+  display: none;
+}
+
+.xBtn {
+  display: none;
+}
+
+.headerBtns {
+  text-decoration: none;
+  font-family: "Caveat";
+  font-size: 2rem;
+  color: #ede5bb;
+}
+
+/*Styling Corners*/
+.headerCorner {
+  position: absolute;
+  filter: drop-shadow(0 0 2px #ede5bb);
+}
+
+.headerCornerTL {
+  rotate: -135deg;
+  top: 0;
+  left: 1.5rem;
+}
+
+.headerCornerTR {
+  rotate: -45deg;
+  top: 0;
+  right: 1.5rem;
+}
+
+.headerCornerBL {
+  rotate: 45deg;
+  bottom: 0;
+  right: 1.5rem;
+}
+
+.headerCornerBR {
+  rotate: 135deg;
+  bottom: 0;
+  left: 1.5rem;
+}
+
+/*Styling the text for the header*/
+.headerText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ede5bb;
+  margin-top: 28vh;
+  line-height: 0.9;
+}
+
+.headerTitle {
+  font-family: "Caveat";
+  font-size: 18vw;
+  font-weight: 400;
+  text-shadow: 1px 1px 5px #ede5bb;
+}
+
+.headerSubtitle {
+  font-family: "Caveat";
+  font-size: 4vw;
+}
+
+.headerSubtitle span {
+  font-family: "Caveat";
+  color: #00657c;
+  font-weight: 700;
+}
+
+.scrollBox {
+  display: none;
+}
+
+/* header section end */
+
+/* The entirity of the about us section */
+.aboutUsSection {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+      180deg,
+      rgba(186, 211, 238, 0.9) 30%,
+      rgba(0, 101, 124, 1) 100%
+    ),
+    url(../imgs/photos/aboutus/pictureofmap.png), no-repeat;
+}
+
+.aboutusSection {
+  width: 100%;
+  background-color: #00657c;
+  box-shadow: inset 0 3.75rem 3.75rem -3.75rem #000000c7,
+    inset 0 -3.75rem 3.75rem -3.75rem #000000c7;
+}
+
+.aboutusContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 5rem 3rem;
+  gap: 0.3rem;
+}
+
+/* only the title which is in the about us content... */
+#aboutusTitle {
+  color: #ede5bb;
+  font-family: Caveat;
+  font-weight: 400;
+  font-size: 4.68rem;
+  text-shadow: 0 0 6px white;
+}
+
+/* Only the text in about us content */
+#aboutusText {
+  color: #ede5bb;
+  width: 50vw;
+  font-size: 1.25rem;
+}
+
+.aboutus {
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: 80vw;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutusLocation {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Only the content in about us section */
+.aboutusFooterTitle {
+  font-size: 1.5rem;
+  color: #fefbf4;
+  font-weight: 500;
+}
+
+.aboutusMap {
+  width: 40rem;
+  height: 20rem;
+  border: none;
+  border-radius: 1.5rem;
+}
+
+.timesContact {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: #ede5bb;
+}
+
+.aboutusAvailability {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.5rem;
+}
+
+.availableTimes {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.listStyleNone {
+  list-style: none;
+}
+
+.quickLinksBox {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  flex-shrink: 0;
+}
+
+.quickLinksText:link,
+.quickLinksText:active {
+  text-decoration: none;
+}
+
+.aboutusFooterText {
+  color: #ede5bb;
+  font-size: 0.875rem;
+  font-weight: 300;
+}
+
+.footerLogo {
+  width: 18rem;
+  height: 12rem;
+}
+
+.contactUs {
+  flex-shrink: 0;
+}
+
+.aboutusFooter {
+  gap: 5.5rem;
+  padding-bottom: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.footerContactUs {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.copyrightText {
+  text-align: center;
+  color: #ede5bb;
+  background-color: #012e38;
+  padding: 1rem 0;
+}
+
+/* WOTM SECTION STYLING */
+.wotmWrapper {
+  position: relative;
+  overflow: hidden;
+  padding: 15vh 7vw;
+  text-align: center;
+}
+
+.wotmH1 {
+  font-family: "Caveat";
+  font-weight: 400;
+  color: #00657c;
+  letter-spacing: 0.1rem;
+  margin: 0 0 4.6rem;
+  font-size: 4.4rem;
+}
+
+.wotmButton {
+  background-color: #00657c;
+  position: relative;
+  z-index: 1;
+  color: #fefbf4;
+  margin: auto;
+  border-radius: 6.3rem;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 2.5vh 7vh;
+}
+
+.wotmBack {
+  background-color: #00657c;
+  position: fixed;
+  z-index: 1;
+  bottom: 12vh;
+  left: 11vw;
+  border-radius: 50rem;
+  width: fit-content;
+  height: fit-content;
+  padding: 1.4rem 1.5rem;
+}
+
+.wotmBack img {
+  width: 1rem;
+}
+
+/*WOTM banner*/
+.wotmBanner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 7rem;
+  background-color: #00657c;
+  color: #fefbf4;
+  text-align: center;
+}
+
+.wotmBanner > p {
+  font-family: "Caveat";
+  font-size: 2.5rem;
+  font-weight: 100;
+}
+
+.wotmBanner > a {
+  font-size: 1.5rem;
+  color: #00657c;
+  background-color: #fefbf4;
+  margin: 0 0 0 4rem;
+}
+
+/* WOTM food items */
+.wotmSection {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1.5vw;
+  padding-bottom: 2.5rem;
+  justify-content: space-evenly;
+  margin: auto;
+}
+
+.wotmFood {
+  width: 12rem;
+  height: 17rem;
+  text-align: center;
+  font-size: 1.9rem;
+  font-weight: normal;
+  color: #00657c;
+}
+
+.wotmFood img {
+  max-width: 8rem;
+  filter: drop-shadow(0.625rem 1.875rem 1.875rem #69686873);
+}
+
+img.wotmCoffee {
+  max-width: 10rem;
+  rotate: 90deg;
+  filter: drop-shadow(1.875rem 0.625rem 1.875rem #69686873);
+}
+
+.wotmFood > p {
+  margin-bottom: 2.5rem;
+}
+
+/* WOTM background */
+.wotm {
+  background-color: #fefbf4;
+  box-shadow: inset 0 3.75rem 3.75rem -3.75rem #000000c7,
+    inset 0 -3.75rem 3.75rem -3.75rem #000000c7;
+}
+
+.wotmBackground {
+  transform: rotate(-42.512deg);
+  z-index: 0;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 30vh;
+  left: 35vw;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.wotmBackground > img {
+  opacity: 0.13;
+  max-width: 10rem;
+}
+
+/*Menu Section styling*/
+
+/*Trending orders Styling*/
+.menu {
+  position: relative;
+}
+
+.menuTrendingTitile {
+  text-align: center;
+  font-family: "Caveat";
+  font-size: 4.375rem;
+  margin-bottom: 2rem;
+  font-weight: 400;
+  z-index: 1;
+}
+
+.menuTrendingOrders {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 4rem;
+  row-gap: 2rem;
+  justify-content: center;
+  width: 60vw;
+  margin-bottom: 5rem;
+}
+
+.menuView {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 6rem;
+  background: linear-gradient(180deg, #f8f3de 0%, #e2ebf6 49.48%, #bad3ee 100%);
+}
+
+hr {
+  width: 1.5rem;
+  opacity: 20%;
+}
+
+.menuTrendingItems {
+  background-color: #fefbf4;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  position: relative;
+  backdrop-filter: blur(1.5rem);
+}
+
+.menuTrendingImgs {
+  position: absolute;
+  width: 7rem;
+  height: 7rem;
+  top: 5%;
+  right: -18%;
+}
+
+/*Le Menu*/
+
+/*Categories*/
+.menuCategories {
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: nowrap;
+  margin: 0 2rem 2rem;
+}
+
+.menuScroll {
+  z-index: 1;
+  top: 14vh;
+  left: 10vw;
+  width: 100%;
+  position: sticky;
+  overflow: scroll;
+}
+
+.menuScroll::-webkit-scrollbar {
+  display: none;
+}
+
+.menuCategoriesNames {
+  text-decoration: none;
+  min-width: 8rem;
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #07143b;
+  box-shadow: 0px 11px 20px 0px rgba(0, 0, 0, 0.06);
+  font-size: 0.9rem;
+  letter-spacing: 0.02rem;
+  font-weight: 400;
+}
+
+.menuCategoriesNames:hover,
+.menuCategoriesNames:focus {
+  background-color: rgba(186, 211, 238, 0.56);
+}
+
+/*Menu Styling*/
+.menuContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+  margin: 0 2.5rem;
+}
+
+.menuItems {
+  background-color: white;
+  border-radius: 1.5rem;
+  padding: 2.5rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.menuItems:nth-child(8) {
+  margin-bottom: 6rem;
+}
+
+.menuSubitems {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3.5rem;
+}
+
+.menuTitle {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 100;
+  font-family: "Caveat";
+  margin-bottom: 1.5rem;
+}
+
+.menuProducts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  color: #07143b;
+  border-bottom: 0.01rem dotted black;
+}
+
+.menuBtn {
+  background-color: white;
+  border-radius: 1.5rem;
+  padding: 1rem;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+
+.menuSpanColumn2 {
+  grid-column: span 2;
+}
+
+.menuSpanColumnFull {
+  grid-column: span 3;
+}
+
+.menuSpanRow2 {
+  grid-row: span 2;
+}
+
+.menuBackgroundImg {
+  background: linear-gradient(to top, #f5eed2e3, #f5eed2de),
+    url("../imgs/photos/menu/croissants.jpg") no-repeat top center;
+  background-size: cover;
+}
+
+.menuBackgroundClr {
+  background-color: rgba(186, 211, 238, 0.56);
+}
+
+.menuColorBlue {
+  color: #00657c;
+}
+
+.menuTrendingPrice {
+  font-weight: 400;
+}
+
+.menuTrendingSubTitle {
+  font-weight: 100;
+  font-size: 0.75rem;
+}
+
+.menuSubTitle {
+  color: #00657c99;
+  font-size: 0.85rem;
+  letter-spacing: 0.025rem;
+}
+
+.menuSubProducts {
+  font-size: 0.6rem;
+  font-weight: 500;
+  letter-spacing: 0.01rem;
+  color: #00000091;
+  margin-left: 1.25rem;
+}
+
+/*Lemon and Beans for the menu page Changed*/
+.menuImgLemon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: auto;
+  width: 9rem;
+}
+
+.menuImgBeans {
+  position: absolute;
+  right: 0;
+  left: 0;
+  height: auto;
+  width: 9rem;
+}
+
+@media (max-width: 1200px) {
+  /*Menu Section Styling Responsivness*/
+  .menuTrendingOrders {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 6rem;
+  }
+
+  .menuSubTitle {
+    font-size: 0.65rem;
+  }
+
+  /*WOTM STYLING: Fixing sizes*/
+  .wotmBanner > p {
+    font-size: 1.7rem;
+  }
+
+  .wotmBanner > a {
+    font-size: 1rem;
+    margin: 0 0 0 3rem;
+  }
+
+  .wotmBack {
+    display: none;
+  }
+
+  /* Start. About Us: Fixing sizes */
+  #aboutusTitle {
+    font-size: 3.75rem;
+  }
+
+  #aboutusText {
+    font-size: 1rem;
+  }
+
+  .aboutusLocation {
+    gap: 3rem;
+  }
+
+  .aboutusMap {
+    width: 80vw;
+  }
+
+  .quickLinksBox h3 {
+    font-size: 1.125rem;
+  }
+
+  .aboutusHoursAndLocation {
+    flex-direction: column;
+  }
+
+  .aboutusAvailability {
+    gap: 2.5rem;
+  }
+
+  .footerLogo {
+    width: 14rem;
+    height: 8rem;
+  }
+
+  .footerParagraph {
+    display: none;
+  }
+
+  .aboutusFooter {
+    width: 80vw;
+    justify-content: space-between;
+  }
+
+  .quickLinksBox {
+    gap: 1rem;
+  }
+
+  /*END*/
+}
+
+@media (max-width: 930px) {
+  .menuCategories {
+    justify-content: start;
+  }
+}
+
+@media (max-width: 800px) {
+  body,
+  html {
+    width: 100vw;
+  }
+
+  /*Header Styling responsivness*/
+
+  .headerTitle {
+    font-size: 20vw;
+  }
+
+  .headerSubtitle {
+    font-size: 6vw;
+  }
+
+  .headerNavBar {
+    padding: 0.75rem 2.5rem;
+  }
+
+  .headerCorner {
+    display: none;
+  }
+
+  .headerBtn {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 1.5rem;
+    background-color: rgb(0, 100, 122, 0.7);
+    backdrop-filter: blur(4px);
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    text-shadow: 1px 1px 6px;
+  }
+
+  .hamburgerBtn {
+    display: flex;
+    background: none;
+    border: none;
+  }
+
+  .hamburgerImg,
+  .xImg {
+    width: 2.5rem;
+  }
+
+  .xBtn {
+    z-index: 100;
+    display: none;
+    background: none;
+    border: none;
+  }
+
+  .scrollBox {
+    color: #ede5bb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2.5%;
+    z-index: -1;
+  }
+
+  .arrowDown {
+    width: 1.5rem;
+    height: 2rem;
+  }
+
+  .scrollDownText {
+    font-size: 0.875rem;
+  }
+
+  /*WOTM STYLING: Fixing sizes*/
+  .wotmH1 {
+    font-size: 4rem;
+  }
+
+  .wotmButton {
+    font-size: 1.3rem;
+    padding: 2vh 5vw;
+  }
+
+  .wotmFood {
+    font-size: 1.7rem;
+  }
+
+  .wotmWrapper {
+    padding: 9vh 7vw 12vh;
+  }
+
+  .wotmBanner {
+    height: 6rem;
+  }
+
+  .wotmBanner > p {
+    font-size: 1.5rem;
+  }
+
+  .wotmBanner > a {
+    font-size: 0.8rem;
+    margin: 0 0 0 2rem;
+  }
+
+  /*WOTM STYLING: Fixing the background*/
+  .wotm {
+    box-shadow: inset 0 2.75rem 2.75rem -2.75rem #69686890,
+      inset 0 -2.75rem 2.75rem -2.75rem #9e9e9e32;
+  }
+
+  .wotmBackground {
+    width: 150vw;
+    height: 80vh;
+  }
+
+  /*Menu Section Styling Responsivness*/
+  .menuTrendingOrders {
+    grid-template-columns: 1fr;
+  }
+
+  .menuTrendingImgs {
+    right: -10%;
+  }
+
+  .menuSpanRow2 {
+    grid-row: 5;
+  }
+
+  .menuItems,
+  .menuSubitems {
+    grid-column: 1 / span 3;
+  }
+
+  .menuSubitems {
+    margin-bottom: 1.5rem;
+  }
+
+  .menuImgBeans {
+    width: 7.5rem;
+  }
+
+  /*Start. About us: Fixing Sizing */
+  .aboutusMap {
+    height: 70vh;
+  }
+
+  .aboutusFooterText {
+    font-size: 0.625rem;
+  }
+
+  .footerLogo {
+    width: 8rem;
+    height: 4rem;
+  }
+
+  .quickLinksBox h3 {
+    font-size: 0.875rem;
+  }
+
+  .aboutusFooter {
+    gap: 1rem;
+  }
+
+  /* End. About Us: Fixing Sizing */
+}
+
+@media (max-width: 430px) {
+  /*Header Styling Responsivness*/
+  .scrollDownText {
+    font-size: 0.675rem;
+  }
+
+  /*WOTM STYLING: Fixing sizes*/
+  .wotmH1 {
+    font-size: 1.875rem;
+    margin: 0 0 2rem;
+  }
+
+  .wotmButton {
+    font-size: 1rem;
+    padding: 2vh 3vh;
+  }
+
+  .wotmFood {
+    font-size: 0.875rem;
+    width: 7rem;
+    height: 12rem;
+  }
+
+  .wotmFood img {
+    max-width: 6.7rem;
+  }
+
+  .wotmWrapper {
+    padding: 7vh 12vw 9vh;
+  }
+
+  .wotmFood > p {
+    margin-bottom: 1rem;
+  }
+
+  .wotmBanner {
+    height: 7rem;
+    flex-wrap: wrap;
+  }
+
+  .wotmBanner > p {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+
+  .wotmBanner > a {
+    font-size: 0.8rem;
+    margin: 0 0 1rem;
+  }
+
+  /*WOTM STYLING: Fixing the background*/
+
+  .wotmBackground {
+    width: 200vw;
+    height: 50vh;
+    top: 10vh;
+  }
+
+  /*Menu Section Styling Responsivness*/
+
+  .menuTrendingTitile {
+    font-size: 1.875rem;
+  }
+
+  .menuTrendingOrders {
+    width: 70vw;
+  }
+
+  .menuProducts {
+    font-size: 0.75rem;
+  }
+
+  .menuCategories {
+    margin: 2rem 2rem 4rem;
+  }
+
+  .menuScroll {
+    top: 11vh;
+  }
+
+  .menuItems {
+    padding: 2.5rem;
+  }
+
+  .menuTitle {
+    font-size: 1.5rem;
+  }
+
+  .menuSubTitle {
+    font-size: 0.625rem;
+  }
+
+  .menuImgLemon {
+    width: 6rem;
+  }
+
+  .menuImgBeans {
+    width: 6rem;
+  }
+
+  /*Start. About us: Fixing Sizing*/
+  #aboutusTitle {
+    font-size: 2.5rem;
+  }
+
+  #aboutusText {
+    font-size: 0.75rem;
+  }
+
+  .aboutusFooterTitle {
+    font-size: 1rem;
+  }
+
+  .aboutusAvailability {
+    font-size: 0.75rem;
+    gap: 1.5rem;
+  }
+
+  .footerLogo {
+    width: 4.5rem;
+    height: 3rem;
+  }
+}
